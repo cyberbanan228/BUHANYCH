@@ -11,6 +11,7 @@ var element = {
 	money     : document.getElementById("money"),//txt
 }
 
+
 //       									============= GLOBAL FUNCTIONS =============
 
 function addMoney() { // onClicker pressed add ClickGain
@@ -45,6 +46,7 @@ function onBuy(obj) {
 	for(let i=0;i<shop.length;i++){
 		shop[i].element.disabled = true;
 	}
+	
 }
 
 //       								 ============= SHOP BUTTON CLASS =============
@@ -128,5 +130,7 @@ element.clicker.onclick = function() {
 	addMoney(); updateMoney(); 
 	element.clicker.disabled = false;
 };
+
+	  
 
 

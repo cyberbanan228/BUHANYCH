@@ -8,14 +8,28 @@
 			================= BODY =================
 */
 body{
-	background: rgb(15,232,146);
-	background: radial-gradient(circle, rgba(15,232,146,1) 0%, rgba(11,186,131,1) 31%, rgba(8,129,153,1) 100%);
+	background: rgb(255, 0, 0);
+	background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(186, 11, 11) 31%, rgb(255, 0, 0) 100%);
+	
 }
 
 /* 
       ================= ALL BUTTONS ANIMATIONS =================
 */
-
+.graph {
+    width: 500px; /* width and height are arbitrary, just make sure the #bar styles are changed accordingly */
+    height: 30px;
+    border: 1px solid #888; 
+    background: rgb(168,168,168);
+    background: -moz-linear-gradient(top, rgba(168,168,168,1) 0%, rgba(204,204,204,1) 23%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(168,168,168,1)), color-stop(23%,rgba(204,204,204,1)));
+    background: -webkit-linear-gradient(top, rgba(168,168,168,1) 0%,rgba(204,204,204,1) 23%);
+    background: -o-linear-gradient(top, rgba(168,168,168,1) 0%,rgba(204,204,204,1) 23%);
+    background: -ms-linear-gradient(top, rgba(168,168,168,1) 0%,rgba(204,204,204,1) 23%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a8a8', endColorstr='#cccccc',GradientType=0 );
+    background: linear-gradient(top, rgba(168,168,168,1) 0%,rgba(204,204,204,1) 23%);
+    position: relative;
+}
 .button, .clicker {
 	/*Disable selection and drag*/
 	-webkit-touch-callout: none;
@@ -41,6 +55,7 @@ body{
 	background-color:#F0F0F0;
 }
 
+
 /*
 			================= SHOP =================
 */
@@ -65,8 +80,8 @@ body{
 .clicker {
 	/*Size*/
 	border-radius: 50%;
-	width:200px;
-	height:200px;
+	width:400px;
+	height:400px;
 	/* Position */
 	position: absolute;/*                postulat de départ */
 	top: 50%; left: 50%;/*               à 50%/50% du parent référent */
@@ -75,13 +90,22 @@ body{
 	transition: width 0.3s, height 0.3s;
 }
 .clicker:hover {
-	width:225px;
-	height:225px;
+	width:325px;
+	height:325px;
 }
 .clicker:active {
 	transition: width 0.05s, height 0.05s;
-	width:200px;
-	height:200px;
+	width:300px;
+	height:300px;
+}
+a.button {
+    width: 200;height: 50;
+	position: absolute;
+	color: #ff5100;
+	left: 87%;
+	transform: translate(-50%, -50%)
+	
+	;
 }
 
 /* 
