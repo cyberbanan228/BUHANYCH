@@ -8,8 +8,8 @@
 			================= BODY =================
 */
 body{
-	background: rgb(255, 0, 0);
-	background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(186, 11, 11) 31%, rgb(255, 0, 0) 100%);
+	background: rgb(0, 81, 255);
+	background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(11, 116, 186) 31%, rgb(0, 4, 255) 100%);
 	
 }
 
@@ -60,7 +60,7 @@ body{
 			================= SHOP =================
 */
 .button{
-	width: 200;height: 50;
+	width: 150;height: 30;
 	position: absolute;
 	left: 87%;
 	transform: translate(-50%, -50%);
@@ -80,8 +80,8 @@ body{
 .clicker {
 	/*Size*/
 	border-radius: 50%;
-	width:400px;
-	height:400px;
+	width:200px;
+	height:200px;
 	/* Position */
 	position: absolute;/*                postulat de départ */
 	top: 50%; left: 50%;/*               à 50%/50% du parent référent */
@@ -90,19 +90,20 @@ body{
 	transition: width 0.3s, height 0.3s;
 }
 .clicker:hover {
-	width:325px;
-	height:325px;
+	width:225px;
+	height:225px;
 }
 .clicker:active {
 	transition: width 0.05s, height 0.05s;
-	width:300px;
-	height:300px;
+	width:200px;
+	height:200px;
 }
 a.button {
-    width: 200;height: 50;
+    width: 150;height: 30;
 	position: absolute;
-	color: #ff5100;
+	color: #5f5959;
 	left: 87%;
+	top:12%;
 	transform: translate(-50%, -50%)
 	
 	;
