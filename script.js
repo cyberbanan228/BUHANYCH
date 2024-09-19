@@ -10,7 +10,13 @@ var element = {
 	clicker   : document.getElementById("main-clicker"),//button
 	money     : document.getElementById("money"),//txt
 }
+const btn = document.getElementById('btn');
 
+function classAdd(){
+ const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+}
+ btn.addEventListener('click', classAdd);
 
 //       									============= GLOBAL FUNCTIONS =============
 
