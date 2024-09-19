@@ -1,10 +1,6 @@
-
-
-
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	
 	<title>BUHANSTER!</title>
 	<b>до BUHлистинга осталось:</b>
 	<progress value="34" max="100"><div id="progress" class="graph"><div id="bar" style="width:34%"><p>34% complete</p></div></div></progress>
@@ -12,9 +8,31 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	
+	<header id="header">
+		<a id="logo">BUHANSTER KOMBAT</a>
+		  <nav id="nav">
+			<button id="btn"><span id="hamburguer"><span></button>
+			 <ul id="menu">
+			   <li><a href="/"><NEGORIK></a></li>
+			   <li><a href="/">BUHANSTER</a></li>
+			   <li><a href="/">COIN</a></li>
+			 </ul>
+		  </nav>
+	  </header>
+	  <section class="wrapper">
+			  <div id="stars"></div>
+			  <div id="stars2"></div>
+			  <div id="stars3"></div>
+	  </section>
+
+
+	  <button type="button" onclick="window.myDialog.showModal()">
+		чат с Negorik_Byh
+	  </button>
+	  <dialog id="myDialog">Я тебя взломал Скинь мне все свои деньги </dialog>
+	  
 	<p id="money" class="money-text"></p>
-	
+	<embed name="SONG EGORIK" src="SONG EGORIK.mp3" width="120" height="50" loop="false" autostart="false">
 	<button id="main-clicker" class="clicker">
 		<img id="logo-clicker" src="img/money_logo.jpg" draggable=false class="clicker"></img>
 	</button>
@@ -22,7 +40,7 @@
 	<button id="b1" class="button" disabled><b></b>BUHANSTER за клик x2</button>
 	<button id="b2" class="button" disabled><b></b>+5 каждую секунду</button>
 	<button id="b3" class="button" disabled><b></b>автомайн x2</button>
-	
+	<button id="b4" class="button" disabled><b></b>перечислить NEGORy</button>
 	
 	<script src="script.js"></script>
 </body>
