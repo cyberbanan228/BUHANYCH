@@ -1,5 +1,7 @@
 
 
+//       									 ============= GLOBAL VARIABLES =============
+
 var money = 0,//global player's money
 	clickGain = 1,//money gain on clicker clicked =
 	autoGain = 1,//auto money gain
@@ -10,13 +12,6 @@ var element = {
 	clicker   : document.getElementById("main-clicker"),//button
 	money     : document.getElementById("money"),//txt
 }
-const btn = document.getElementById('btn');
-
-function classAdd(){
- const nav = document.getElementById('nav');
-  nav.classList.toggle('active');
-}
- btn.addEventListener('click', classAdd);
 
 //       									============= GLOBAL FUNCTIONS =============
 
@@ -52,7 +47,6 @@ function onBuy(obj) {
 	for(let i=0;i<shop.length;i++){
 		shop[i].element.disabled = true;
 	}
-	
 }
 
 //       								 ============= SHOP BUTTON CLASS =============
@@ -136,8 +130,5 @@ element.clicker.onclick = function() {
 	addMoney(); updateMoney(); 
 	element.clicker.disabled = false;
 };
-
-
-	  
 
 
